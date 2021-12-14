@@ -1,16 +1,24 @@
-
 <style type="text/css">
-    body{
+    body {
         background-color: #383838;
         overflow: hidden;
     }
-    #pdfContainer embed{
+    #pdfContainer iframe {
+        width: calc(100vw - 10px);
+        height: calc(100vh - 10px);
+    }
+    #pdfContainer embed {
         width: calc(100vw - 10px);
         height: calc(100vh - 10px);
     }
 </style>
 <body>
-<div id="pdfContainer">
-        <embed src="https://kichappa.github.io/resume/Graduate%20Portfolio%201.6%20-Design%20-nc%20-c.pdf" onerror="this.onerror=null;this.src='https://docs.google.com/gview?url=https://kichappa.github.io/resume/Graduate%20Portfolio%201.6%20-Design%20-nc%20-c.pdf&embedded=true';" type="application/pdf"/>
+    <div id="pdfContainer">
+        <iframe
+            title="pdf"
+            src="https://kichappa.github.io/resume/Graduate%20Portfolio%201.6%20-Design%20-nc%20-c.pdf" 
+            onerror="this.onerror=null;this.src='https://docs.google.com/gview?url=https://kichappa.github.io/resume/Graduate%20Portfolio%201.6%20-Design%20-nc%20-c.pdf&embedded=true';" 
+            frameborder="0"
+        ></iframe>/>
 </div>
 </body>
