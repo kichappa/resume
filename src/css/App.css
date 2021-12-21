@@ -36,8 +36,12 @@
         transform: rotate(360deg);
     }
 }
+/* body {
+    overflow-y: hidden;
+} */
 
 #portfolios {
+    z-index: 3;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -48,5 +52,6 @@
 }
 
 .pfChild {
+    z-index: inherit;
     width: 40vw;
 }
